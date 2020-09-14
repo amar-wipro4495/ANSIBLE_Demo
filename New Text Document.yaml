@@ -1,0 +1,8 @@
+-name: ansible operations on files
+  hosts: localhost
+  become:true
+  tasks:
+   - name: ansible ensuring directiory exists
+     file:
+      path: $home/Ram_directory
+      state: directory
